@@ -49,22 +49,11 @@ for ($i=0; $i < count($moves); $i++) {
             $visitedTail[$positions[1][0]][$positions[1][1]] = true;
             $total++;
         }
-        // // find max/min head positions
-        // $positionsMax = findPositionsMax($positions, $positionsMax);
-        // $positionsMin = findPositionsMin($positions, $positionsMin);
     }
 }
 
 // final answer
 echo $total . " unique tail positions\n";
-
-// drawVisitedMatrix($visitedHead, $indicator='H');
-// echo "**********\n";
-// drawVisitedMatrix($visitedTail, $indicator='T');
-
-// // display max/min head positions
-// var_dump($positionsMax);
-// var_dump($positionsMin);
 
 
 // ***** FUNKTIONS *****
@@ -144,25 +133,3 @@ function findPositionsMin($positions, $positionsMin) {
     }
     return $positionsMin;
 }
-
-
-
-
-
-
-
-
-//************** Read variants *******************/
-// echo "***** file_get_contents\n";
-// $moves_fgc = array();
-// $inputFile = file_get_contents("d9_Example.txt") or die("Unable to open file!");
-// $moves_fgc[] = explode(PHP_EOL, $inputFile);
-// var_dump($inputFile);
-// var_dump($moves_fgc);
-
-// echo "***** file\n";
-// $moves_f = array();
-// $inputFile = file("d9_Example.txt") or die("Unable to open file!");
-// var_dump($inputFile);
-
-// echo "***** fopen/fclose\n";

@@ -57,28 +57,11 @@ for ($i=0; $i < count($moves); $i++) {
             }
             $visited[$k][$positions[$k][0]][$positions[$k][1]] = true;
         }
-        // // draw current position of all knots
-        //     echo '***** Line ' . $i . ', repeat ' . $j . " *****\n";
-        //     drawPositions($positions);
-
-        // // find max/min head positions
-        // $positionsMax = findPositionsMax($positions, $positionsMax);
-        // $positionsMin = findPositionsMin($positions, $positionsMin);
     }
 }
 
 // final answer
 echo $total . " unique tail positions\n";
-
-
-// // draw unique visited positions for all knots
-// for ($q = 0; $q < KNOTS; $q++) {
-//     drawVisitedMatrix($visited, $q);
-// }
-
-// // display max/min head positions
-// var_dump($positionsMax);
-// var_dump($positionsMin);
 
 
 // ***** FUNKTIONS *****
